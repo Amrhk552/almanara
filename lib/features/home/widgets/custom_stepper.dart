@@ -12,7 +12,7 @@ class CustomStepper extends StatelessWidget {
     SizeConfig.init(context);
     return Container(
       alignment: Alignment.topCenter,
-      height: SizeConfig.heightPercentage(12),
+      height: SizeConfig.heightPercentage(SizeConfig.screenHeight > 800 ? 10 : 12),
       child: EasyStepper(
         padding: EdgeInsets.zero,
         alignment: Alignment.topCenter,
